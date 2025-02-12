@@ -37,6 +37,46 @@
     <link rel="preload" as="image" href="/assets/css/dot.css">
   </head>
 
+<body>
+    <!-- Background video -->
+    <video id="background-video" autoplay loop muted>
+        <source src="your-background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio player controls -->
+    <div id="audio-player">
+        <audio id="audio" autoplay loop>
+            <source src="your-audio.mp4" type="audio/mp4">
+            Your browser does not support the audio tag.
+        </audio>
+        <!-- Play/Pause Button -->
+        <button onclick="toggleAudio()">Play / Pause</button>
+        <!-- Volume Control -->
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="setVolume()">
+    </div>
+
+    <script>
+        // Function to toggle play/pause
+        function toggleAudio() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        // Function to adjust volume
+        function setVolume() {
+            var audio = document.getElementById('audio');
+            var volumeControl = document.getElementById('volume');
+            audio.volume = volumeControl.value;
+        }
+    </script>
+</body>
+</html>
+  
   <body oncontextmenu="false">
     <input type="checkbox" autocomplete="off" id="overlay-toggle">
     <div class="overlay fullscreen">
@@ -69,6 +109,16 @@
         { id: "_ccat" },
       ]);
     </script>
+
+        <style>
+        /* Position the player in the top left corner */
+        #audio-player {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+    </style>
     <style>
       * {
         cursor: url(images/0f4facfa-96a3-44c6-94a4-37024654bef5.png)
@@ -236,6 +286,8 @@
   <script protect="" src="js/protect.js"></script>
   <script src="js/star.js"></script>
 
+
+  
   <script>
     function copyToClipboard(text) {
         // Create a temporary textarea element to hold the text
