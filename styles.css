@@ -1,0 +1,141 @@
+
+/* Reset default styles and set up general styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #060606;
+  text-align: center;
+  color: #cccccc;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+
+th {
+  font-size: 22px;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="text"], input[type="password"] {
+  background-color: #2b2b2b;
+  color: #cccccc;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  cursor: pointer;
+  color: #1b1b1b;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+}
+
+.message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+a {
+  color: #0074f8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.shadow {
+  text-shadow: 3px 3px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+      margin-top: 10vh;
+  }
+  input[type="submit"] {
+      padding: 6px 12px;
+  }
+}
+
+.partners-box {
+    background-color: #121212;
+    padding: 30px; /* Padding for spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 500px; /* Width for a larger box */
+    max-width: 90%; /* Responsive design for smaller screens */
+    margin: auto; /* Center the box horizontally */
+}
+
+.partners-list {
+    margin-top: 20px;
+}
+
+.partner-item {
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.partner-item h2 {
+    margin: 0;
+    color: #b9b9b9;
+}
+
+.partner-item p {
+    color: #cccccc;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #0074f8;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    background-color: #005bb5;
+}
+
+@media only screen and (max-width: 600px) {
+    .partners-box {
+        width: 90%; /* Ensure it fits smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .partner-item {
+        padding: 12px; /* Slightly smaller padding for smaller screens */
+    }
+}

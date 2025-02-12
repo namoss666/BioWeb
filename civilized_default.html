@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="kit.fontawesome.com/416c370b17.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; /* Updated font-family */
+            background-color: #060606; /* Changed the background color */
+            color: #f4f4f4; /* Changed text color to contrast with the background */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dashboard {
+            background-color: #0c0c0c; /* Slightly lighter color for the dashboard */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 600px;
+            max-width: 90%;
+            text-align: left;
+        }
+        .welcome {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #f4f4f4; /* Match text color with body */
+        }
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #333; /* Darker border color */
+        }
+        .file-name {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+        .delete-btn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 20px; /* Add a margin to create space between the delete button and file name */
+            margin-left: -20px; /* Move the button 20 pixels to the left */
+        }
+        .delete-btn:hover {
+            background-color: #444; /* Darken on hover */
+        }
+        .upload-btn {
+            background-color: #fff;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .upload-btn:hover {
+            background-color: #3c3c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard">
+          <p class='welcome'>civilized.me</p> <!-- Static username placeholder -->
+
+            <div style='display:flex; justify-content: space-between; align-items: center;'> <!-- Flexbox for alignment -->
+                <ul class='links' style='list-style-type: none; padding: 0; margin: 0;'> <!-- Reset default list styling -->
+                    <li style='display:inline; margin-right: 15px;'><a href='https://civilized.me/login.php' style='color: #fff; text-decoration: none;'><i class="fa-solid fa-right-to-bracket"></i></i> Login</a></li>
+                    <li style='display:inline; margin-right: 15px;'><a href='https://civilized.me/register.php' style='color: #fff; text-decoration: none;'><i class="fa-solid fa-lock"></i></i> Register</a></li>
+                    <li style='display:inline; margin-right: 15px;'><a href='https://civilized.me/updates.html' style='color: #fff; text-decoration: none;'><i class="fa-solid fa-bell"></i> Updates</a></li>
+                    <li style='display:inline; margin-right: 15px;'><a href='https://civilized.me/staff.html' style='color: #fff; text-decoration: none;'><i class="fa-solid fa-ghost"></i></i> Staff</a></li>
+                    <li style='display:inline; margin-right: 15px;'><a href='https://discord.gg/UBYhkpXGE3' style='color: #fff; text-decoration: none;'><i class='fab fa-discord'></i> Discord</a></li>
+
+                </ul> <!-- Close list -->
+            </div> <!-- Close flex container -->
+        </div> <!-- Close dashboard -->
+    </div> <!-- Close container -->
+</body>
+<script protect="" src="js/protect.js"></script>
+</html>

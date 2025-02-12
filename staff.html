@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="kit.fontawesome.com/416c370b17.js" crossorigin="anonymous"></script>
+    <title>Staff List</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; /* Updated font-family */
+            background-color: #060606; /* Changed the background color */
+            color: #f4f4f4; /* Changed text color to contrast with the background */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dashboard {
+            background-color: #0c0c0c; /* Slightly lighter color for the dashboard */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 600px;
+            max-width: 90%;
+            text-align: left;
+        }
+        .staff-list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .staff-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .staff-item img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+        .staff-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .staff-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 2px; /* Reduced margin-bottom to bring name and role closer */
+        }
+        .staff-role {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 0; /* Removed margin-top to further reduce gap */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <a href='index.html' style='color: #0074f8;' class='back-link'>Back to Home</a>
+            <p class='welcome'>Our Staff</p>
+
+            <ul class="staff-list">
+                <li class="staff-item">
+                    <img src="https://cdn.discordapp.com/avatars/1245466081032667239/bd74e9ec1bfefe476fd0fb5d35692839.png?size=1024" alt="Staff Image">
+                    <div class="staff-info">
+                        <p class="staff-name"><a style=color:white href="offline.htm">offline</a></p>
+                        <p class="staff-role">owner & developer</p>
+                    </div>
+                </li>
+                <li class="staff-item">
+                    <img src="mesmear.co.uk/wp-content/uploads/person-placeholder.jpg" alt="Staff Image">
+                    <div class="staff-info">
+                        <p class="staff-name"><a style=color:white href="hertz.htm">hertz</a></p>
+                        <p class="staff-role">staff / helper</p>
+                    </div>
+                </li>
+                <li class="staff-item">
+                    <img src="mesmear.co.uk/wp-content/uploads/person-placeholder.jpg" alt="Staff Image">
+                    <div class="staff-info">
+                        <p class="staff-name"><a style=color:white href="richi.htm">richi</a></p>
+                        <p class="staff-role">staff / helper</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script protect="" src="js/protect.js"></script>
+</html>

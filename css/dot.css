@@ -1,0 +1,15 @@
+[class~="video"] {
+  position: fixed;
+}
+[class~="dot"] {
+  min-height: 100%;
+}
+[class~="dot"] {
+  width: 100%;
+}
+[class~="dot"] {
+  background-image: url("../images/dot.png");
+}
+[class~="dot"] {
+  z-index: 2;
+}
